@@ -11,14 +11,13 @@ variable "storage_account_name" {
 }
 
 variable "account_tier" {
-  type = string
+  type        = string
   description = "The storage account tier: Standard or Premium"
-  default = "Standard"
-  # Note about validation
+  default     = "Standard"
 }
 
-variable account_replication_type {
-  type = string
+variable "account_replication_type" {
+  type        = string
   description = "The storage account replication type: LRS, GRS, RAGRS, ZRS, GZRS, RAGRS"
-  default = "GRS"
+  default     = "GRS"
 }
